@@ -1,0 +1,189 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-an-avid-api-fan,-i-want-to-perform-post-and-put-requests-to-create-and-update-resources-so-that-i-can-manage-data-effectively.;create-new-resource-and-update-it",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Create new resource and update it",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create a new data item with userId 1, the title \"My New Post\" and body \"This is the content of my new post.\"",
+            "match": {
+              "location": "tests/step-definitions/posttest-steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228557541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the response status should be 201",
+            "match": {
+              "location": "tests/step-definitions/posttest-steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1305958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the new data item should have the title \"My New Post\"",
+            "match": {
+              "location": "tests/step-definitions/posttest-steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2769750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I update the data item with ID 1 to have the title \"Updated Post Title\"",
+            "match": {
+              "location": "tests/step-definitions/posttest-steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328512999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the response status should be 200",
+            "match": {
+              "location": "tests/step-definitions/posttest-steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 401499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the updated data item should have the title \"Updated Post Title\"",
+            "match": {
+              "location": "tests/step-definitions/posttest-steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1299167
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-an-avid-api-fan,-i-want-to-perform-post-and-put-requests-to-create-and-update-resources-so-that-i-can-manage-data-effectively.",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As an avid API fan, I want to perform POST and PUT requests to create and update resources so that I can manage data effectively.",
+    "tags": [],
+    "uri": "tests/features/DoSomePostsAndPuts.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "as-the-very-best,-like-no-one-ever-was,-i-want-to-get-information-about-a-specific-pokémon-so-that-i-can-add-it-to-my-pokédex.;get-information-about-pikachu",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Get information about Pikachu",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I request information for the Pokémon \"pikachu\"",
+            "match": {
+              "location": "tests/step-definitions/getpoke-steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170181792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "the response status code should be 200",
+            "match": {
+              "location": "tests/step-definitions/getpoke-steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 372541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the Pokémon name should be \"pikachu\"",
+            "match": {
+              "location": "tests/step-definitions/getpoke-steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the Pokémon ID should be 25",
+            "match": {
+              "location": "tests/step-definitions/getpoke-steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the Pokémon types should include \"electric\"",
+            "match": {
+              "location": "tests/step-definitions/getpoke-steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337750
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "as-the-very-best,-like-no-one-ever-was,-i-want-to-get-information-about-a-specific-pokémon-so-that-i-can-add-it-to-my-pokédex.",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "As the very best, like no one ever was, I want to get information about a specific Pokémon so that I can add it to my Pokédex.",
+    "tags": [],
+    "uri": "tests/features/GetPokemon.feature"
+  }
+]

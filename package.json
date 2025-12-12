@@ -1,0 +1,28 @@
+{
+  "name": "focus3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:cucumber": "npx cucumber-js --config=cucumber.config.js",
+    "test:cucumber:html": "cucumber-js --format html:reports/cucumber-report.html",
+    "test:playwright": "npx playwright test",
+    "test": "npm run test:playwright && npm run test:cucumber"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.3.0",
+    "@cucumber/playwright": "^3.1.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.2",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "uuid": "^13.0.0"
+  }
+}
